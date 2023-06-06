@@ -1,0 +1,26 @@
+[{
+    "id": 1,
+    "name": "Argentina",
+    "description": "Argentina is a vast country located in the southern part of South America. The eighth largest country in the world, it is the second largest country in South America after Brazil, and it's about one-third the size of the United States. Argentina is bordered by the Andes Mountains and Chile to the west.",
+    "brief-description": "Come visit the best country of South America."
+},{
+    "id": 2,
+    "name": "Scotland",
+    "description": "Scotland is a mountainous country in the north of the island of Great Britain and shares a land border to the south with England and is bounded by the North Sea on the east and the Atlantic Ocean on the west. Its capital city is Edinburgh. Scotland has some 790 islands - 130 inhabited.",
+    "brief-description": "Come visit Scotland, a part of the island of Great Britain."
+},{
+    "id": 3,
+    "name": "Germany",
+    "description": "Germany, officially the Federal Republic of Germany, is a country in Central Europe. It is the second-most populous country in Europe after Russia, and the most populous member state of the European Union. Germany is situated between the Baltic and North seas to the north, and the Alps to the south.",
+    "brief-description": "Come visit Germany, the “Land of Poets and Thinkers.”"
+},{
+    "id": 4,
+    "name": "Denmark",
+    "description": "Denmark is a country in northern Europe. It is made up of the Jutland Peninsula and more than 400 islands in the North Sea. It shares a border with Germany to the south. The country is almost two times the size of Massachusetts.",
+    "brief-description": "Come visit Denmark, the happiest country on the planet."
+},{
+    "id": 5,
+    "name": "Australia",
+    "description": "Australia is situated entirely in the southern hemisphere, between the Indian and the Pacific ocean, south of Maritime Southeast Asia and north of the Antarctic. With an area of 7,617,930 km², Australia is almost (95%) as large as the continental USA (excluding Alaska).",
+    "brief-description": "Come visit Australia, a land like no other."
+}]
