@@ -5,8 +5,8 @@
     "brief_description": "Come visit the best country of South America.",
     "landscape_img":"https://i.ibb.co/h1sysKZ/Argentina-landscape.jpg",
     "main_img":"https://i.ibb.co/mXY6HDf/Argentina-main.jpg",
-    "program_name":"electric-mechanic",
-    "program_description":"study electromechanics with an agronomy and livestock focus"
+    "program_name":"Electric-mechanic",
+    "program_description":"Study electromechanics with an agronomy and livestock focus"
 },{
     "id": 2,
     "name": "Scotland",
@@ -14,7 +14,7 @@
     "brief_description": "Come visit Scotland, a part of the island of Great Britain.",
     "landscape_img":"https://i.ibb.co/wWsyr5v/scotland-landscape.jpg",
     "main_img":"https://i.ibb.co/9Zr8ybh/scotland-main.jpg",
-    "program_name":"hostelry",
+    "program_name":"Hostelry",
     "program_description":"Experience Scotland's hospitality with a immersive program and event management"
 },{
     "id": 3,
@@ -23,8 +23,8 @@
     "brief_description": "Come visit Germany, the “Land of Poets and Thinkers.”",
     "landscape_img":"https://i.ibb.co/yYDBLjG/germany-landscape.jpg",
     "main_img":"https://i.ibb.co/7KgVDnX/germany-main.jpg",
-    "program_name":"electric-mechanic",
-    "program_description":"study electromechanics with a strong focus on the automobile industry"
+    "program_name":"Electric-mechanic",
+    "program_description":"Study electromechanics with a strong focus on the automobile industry"
 },{
     "id": 4,
     "name": "Denmark",
@@ -32,8 +32,8 @@
     "brief_description": "Come visit Denmark, the happiest country on the planet.",
     "landscape_img":"https://i.ibb.co/zSs79pm/denmark-landscape.jpg",
     "main_img":"https://i.ibb.co/bs9g6YL/denmark-main.jpg",
-    "program_name":"software development",
-    "program_description":"study in one of the countries with the highest demand for software developers in the globe"
+    "program_name":"Software development",
+    "program_description":"Study in one of the countries with the highest demand for software developers in the globe"
 },{
     "id": 5,
     "name": "Australia",
@@ -41,6 +41,6 @@
     "brief_description": "Come visit Australia, a land like no other.",
     "landscape_img":"https://i.ibb.co/WF4kJTV/australia-landscape.jpg",
     "main_img":"https://i.ibb.co/bm5bjD6/Australia.png",
-    "program_name":"medicine",
-    "program_description":"study with the advanced education and cutting-edge research for compassionate healthcare professionals."
+    "program_name":"Medicine",
+    "program_description":"Study with the advanced education and cutting-edge research for compassionate healthcare professionals."
 }]
