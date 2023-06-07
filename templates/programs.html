@@ -1,0 +1,27 @@
+{% extends 'layout_footer_nav.html' %}
+
+{% block body %}
+
+<div class="row justify-content-between">
+    <div class="container bg-primary text-white text-center p-5 m-5 col-5">
+        <p class="display-1">Our programs!</p>
+        <p class="text-justify h2 m-3">Welcome to TuXchange! We open doors to endless opportunities for students seeking immersive educational experiences. With our diverse range of destinations, from bustling cities to picturesque landscapes, students can embark on transformative journeys while fostering cultural understanding and personal growth. Join us and discover a world of possibilities, where education and travel go hand in hand</p>
+    </div>
+
+    <div class="d-flex col-6 row">
+
+        {% for country in countries %}
+
+            <a class="rounded text-white bg-primary m-3 col-3 row foto-pais" style="background-image: url('{{imagenes[country.id-1]}}');background-size: cover;background-position: center;">
+
+                <p class="col-12 h1 h-50">{{ country.program_name }}</p>
+                <p class="col-12 h-50 m-5s">{{ country.program_description }}</p>
+                
+            </a>
+        {% endfor %}
+
+    </div>
+</div>
+
+
+{% endblock %}
