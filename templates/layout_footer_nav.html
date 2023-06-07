@@ -1,5 +1,3 @@
-{% includes "layout_footer.html" %}
-
 {% block custom_css %}
 <link rel="stylesheet" href="{{url_for('static', filename='CSS/nav_style.css')}}">
 {% endblock %}
@@ -12,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
       <ul class="nav navbar-collapse nav-fill bg-light text-dark border-top border-bottom border-dark flex-column flex-sm-row">
           <li class="nav-item btn flex-fill">
-              <a href=""><img src=".\tuxchange-bootstrap\static\images\Tux_Mono.png" style="max-width: 20%;"></a>
+              <a href=""><img class="img-fluid" src=".\static\images\Tux_Mono.png"></a>
           </li>
           <li class="nav-item btn flex-fill">
             <a class="nav-link text-dark mt-1" href="#">Becas</a>
@@ -33,3 +31,5 @@
 
 {% block body %}
 {% endblock %}
+
+{% include "layout_footer.html" %}
