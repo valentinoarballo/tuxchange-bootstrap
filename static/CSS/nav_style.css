@@ -1,0 +1,14 @@
+nav .btn:hover {
+    background-color: #BDBDBD;
+}
+
+nav li {
+    padding: 0px;
+}
+
+nav li a {
+    margin: 0px; 
+    display: block; 
+    width: 100%;
+    height: 100%;
+}
