@@ -1,22 +1,33 @@
+{% block custom_css %}
+<link rel="stylesheet" href="{{url_for('static', filename='CSS/nav_style.css')}}">
+{% endblock %}
+
 {% block nav %}
-<nav>
-    <ul class="nav nav-fill flex-column flex-sm-row bg-light text-dark sticky-top">
-        <li class="nav-item border-right border-dark">
-            <a class="nav-link flex-sm-fill text-dark" href="#">Introducción</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link flex-sm-fill text-dark" href="#">Becas</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link flex-sm-fill text-dark" href="#">Inscripción</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link flex-sm-fill text-dark" href="#">Sobre Nosotros</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link flex-sm-fill text-dark" href="#">Testimonios</a>
-        </li>
-    </ul>
+<nav class="navbar-light navbar-expand-lg bg-light sticky-top w-100">
+    <button class="navbar-toggler bg-light border-dark" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="nav navbar-collapse nav-fill bg-light text-dark border-top border-bottom border-dark flex-column flex-sm-row">
+          <li class="nav-item btn flex-fill">
+              <a href=""><img src=".\tuxchange-bootstrap\static\images\Tux_Mono.png" style="max-width: 20%;"></a>
+          </li>
+          <li class="nav-item btn flex-fill">
+            <a class="nav-link text-dark mt-1" href="#">Becas</a>
+          </li>
+          <li class="nav-item btn flex-fill">
+            <a class="nav-link text-dark mt-1" href="#">Inscripción</a>
+          </li>
+          <li class="nav-item btn flex-fill">
+            <a class="nav-link text-dark mt-1" href="#">Sobre Nosotros</a>
+          </li>
+          <li class="nav-item btn flex-fill">
+            <a class="nav-link text-dark mt-1" href="#">Testimonios</a>
+          </li>
+      </ul>
+    </div>
 </nav>
 {% endblock %}
 
+{% block body %}
+{% endblock %}
