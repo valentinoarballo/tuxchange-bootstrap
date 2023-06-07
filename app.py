@@ -10,7 +10,7 @@ def index():
 @app.route('/programs')
 def programs():
 
-    file_name = "programs.json" # Nombre del archivo JSON
+    file_name = "countries.json" # Nombre del archivo JSON
 
     with open(file_name, "r", encoding="utf8") as json_file: # Abrir el archivo JSON, EL COLMO
         json_data = json.load(json_file)# Cargar el contenido del archivo JSON
