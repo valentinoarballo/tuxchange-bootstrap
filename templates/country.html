@@ -1,0 +1,90 @@
+{% extends 'layout_footer_nav.html' %}
+
+{% block title%} {{country_name}} - TuXchange {% endblock %}
+
+{%block body%}
+
+  <!-- received Variables by 'app.py': 
+        country_name,
+        country_description,
+        country_img,     //a link
+        other_country_list,
+  -->
+  <!-- 
+      each element in the JSON:
+          id,
+          name,
+          description,
+          brief-description,
+          main-img,
+          landscape-img,
+   -->
+
+<!-- begin Main Country -->
+<section class="container m-auto">
+    <div class="row mt-5 mb-5">
+      <div class="col-5">
+
+        <h2 class="display-6">{{country_name}}</h2>
+        <p>{{country_description}} </p>
+                                                <!-- may change -->
+        <a class="btn btn-primary btn-large" href="/inscriptions" role="button">Registrarme</a>
+
+      </div>
+      <div class="col-7 my-auto">
+        <img class="w-100" src="{{country_img}}" alt="{{country_name}}">
+
+      </div>
+    </div>
+</section>
+<!-- end Main Country -->
+
+<br>
+
+<!-- Begin Carousel -->
+<section>
+    <div class="mt-5 mb-3 mx-5">
+        <h1 class="text-center">Otros destinos populares</h1>
+        <hr style="border: solid 1px;">
+    </div>
+
+    <div id="carouselCountry" class="carousel slide" data-ride="carousel" >
+       
+      <!-- Begin Carrousel Content  --> <!--PLEASE NOTE THIS IS NOT TESTED. FURTHER DEVELOPMENT IN 'app.py' NEEDED.-->
+        <div class="carousel-inner">   
+          {%for i in range(len(other_country_list))%}
+            {% if i == 0 %}
+              <div class="carousel-item active">
+            {% else %}
+              <div class="carousel-item">
+            {%endif%}
+                  <div class="carousel-caption  text-left">
+                      <h1>{%other_country_list[i].name%}</h1>
+                      <div class="row">
+                          <p class="col-sm-8 col-12"> {%other_country_list[i].brief-description%}</p>
+                          <div class="col-sm-2 col-12 m-auto">
+                              <a class=" btn btn-primary btn-large" href="/country/{%other_country_list[i].id$}" role="button">Más información</a>
+                          </div>
+                      </div>
+                  </div>                            
+                  <img class="d-block w-100" src="{%other_country_list[i].landscape_img%}" alt="{%other_country_list[i].name%}">
+              </div>
+          {%endfor%}
+        </div>
+      <!-- End Carrousel Content -->
+      
+        <a class="carousel-control-prev" href="#carouselCountry" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCountry" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+            </span>                    
+            <span class="sr-only">Siguiente
+            </span>
+        </a>
+    </div>
+</section>
+<!-- End Carousel -->
+
+{% endblock %}
