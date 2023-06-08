@@ -22,7 +22,7 @@
 
 <!-- begin Main Country -->
 <section class="container m-auto">
-    <div class="row mt-5 mb-5">
+    <div class="row mr-0 ml-0 mt-5 mb-5">
       <div class="col-5">
 
         <h2 class="display-6">{{country_name}}</h2>
@@ -60,7 +60,7 @@
             {%endif%}
                   <div class="carousel-caption  text-left">
                       <h1>{%other_country_list[i].name%}</h1>
-                      <div class="row">
+                      <div class="row mr-0 ml-0">
                           <p class="col-sm-8 col-12"> {%other_country_list[i].brief-description%}</p>
                           <div class="col-sm-2 col-12 m-auto">
                               <a class=" btn btn-primary btn-large" href="/country/{%other_country_list[i].id$}" role="button">Más información</a>
