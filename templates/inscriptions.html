@@ -1,5 +1,100 @@
 {% extends 'layout_footer_nav.html' %}
+{% block title %}incription{% endblock %}
+
+{% block custom_css %}
+<link rel="stylesheet" href="{{url_for('static', filename='CSS/programs_style.css')}}">
+{% endblock %}
 
 {% block body %}
+
+<section class="h-100 h-custom bg-fixed" style="background-image: url('{{imagenes[0]}}');">
+    <div class="row d-flex justify-content-center align-items-center h-100 ">
+        <div class="col-lg-8 col-xl-6 ">
+            <div class="card rounded-lg bg-primary text-white">
+                <div class="card-body p-4 p-md-5">
+                    <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2 display-1">Inscription</h3>
+
+                    <form class="px-md-2">
+
+                        <div class="mb-4">
+                            <input type="text" id="nombre" class="form-control" placeholder="John Doe" />
+                            <label class="form-label" for="nombre">Name</label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+
+                                <div class="form-outline datepicker">
+                                    <input type="date" class="form-control" id="edad" />
+                                    <label for="edad" class="form-label">Birthdate</label>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <div class="form-group">
+                                    <select class="form-control" id="genero">
+                                        <option>Other</option>
+                                        <option>Female</option>
+                                        <option>Male</option>
+                                    </select>
+                                    <label for="genero">Gender</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <select class="form-control" id="genero">
+                                        {% for country in countries %}
+                                        <option>{{ country.program_name }} in {{country.name}}</option>
+                                        {% endfor %}
+                                    </select>
+                                    <label for="genero">Select a program</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-4 pb-2 pb-md-0 mb-md-5">
+                            <div class="col-12">
+                                <input type="email" id="email" class="form-control" placeholder="jonnydoe@Email.com" />
+                                <label class="form-label" for="email">Email</label>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-lg btn-success" data-toggle="modal"
+                            data-target="#modal_confirmacion">
+                            Submit
+                        </button>
+
+                        <div class="modal fade" id="modal_confirmacion" tabindex="-1" role="dialog"
+                            aria-labelledby="modal_confirmacionTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered text-dark" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="modal_confirmacionTitle">Thanks for trusting us!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        a tuxchange operator will get in touch with you
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary"
+                                            data-dismiss="modal">Sure!</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {% endblock %}

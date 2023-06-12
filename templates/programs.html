@@ -7,29 +7,27 @@
 
 {% block body %}
 
-    <div class="row justify-content-between ml-4">
+    <div class="row justify-content-between mx-0 px-xl-5 px-0">
 
-        <div class="bg-primary text-white text-center align-self-center p-5 my-3 col-xl-5 col-12">
-            <p class="display-1">Our programs!</p>
-            <p class="text-justify h2 m-3">Welcome to TuXchange! We open doors to endless opportunities for students seeking immersive educational experiences. With our diverse range of destinations, from bustling cities to picturesque landscapes, students can embark on transformative journeys while fostering cultural understanding and personal growth. Join us and discover a world of possibilities, where education and travel go hand in hand</p>
+        <div class="bg-primary text-white text-center align-self-center p-xl-5 my-3 col-xl-5 col-12">
+            <p class="display-2">Our programs!</p>
+            <p class="text-justify h2 ">Welcome to TuXchange! We open doors to endless opportunities for students seeking immersive educational experiences. With our diverse range of destinations, from bustling cities to picturesque landscapes, students can embark on transformative journeys while fostering cultural understanding and personal growth. Join us and discover a world of possibilities, where education and travel go hand in hand</p>
         </div>
 
-        <div class="col-xl-7 col-12">
-            <div class="row p-3">
+        <div class="col-xl-7 col-12 p-xl-2 p-0">
+            <div class="row m-0 p-xl-3 p-0 justify-content-center">
                 {% for country in countries %}
-
-                    <div class="bg-fixed rounded text-white bg-primary mx-2 my-3 col-11 py-2 row" style="background-image: url('{{imagenes[country.id-1]}}');">
-
-                        <div class="col-12 row">
-                            
-                            <p class="col-12 h3 h-25">{{ country.program_name }}</p>
-                            <p class="col-8 h-75 pt-3 rounded">{{ country.program_description }}</p>
-
-                            <a href="" class="btn col-2 btn-info shadow-lg align-self-center">{{country.name}}</a>
-                            <a href="" class="btn col-2 btn-success shadow-lg text-white h-3 align-self-center">inscription</a>
-                        
+                    <div class="row bg-fixed rounded text-white bg-primary my-md-3 my-1 col-11 py-2 px-0" style="background-image: url('{{imagenes[country.id-1]}}');">
+                        <div class="col-12 row p-0 m-0">
+                            <p class="col-12 h3 h-25 ">{{ country.program_name }}</p>
+                            <p class="col-8 h-75 pt-3 rounded ">{{ country.program_description }}</p>
+                            <div class="col-md-2 col-6">
+                                <a href="" class="btn btn-info shadow-lg align-self-center py-1">{{country.name}}</a>
+                            </div>
+                            <div class="col-md-2 col-6">
+                                <a href="/inscriptions" class="btn btn-success shadow-lg text-white h-3 align-self-center py-1">inscription</a> 
+                            </div>
                         </div>
-                        
                     </div>
                 {% endfor %}
             </div>
