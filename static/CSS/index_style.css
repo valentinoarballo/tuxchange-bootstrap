@@ -6,31 +6,16 @@
     background-color: #dcdcdc;
 }
 
+.bg-blend-mode{
+    background-color: #0000004d !important; 
+    background-blend-mode: darken !important;
+}
+
 .background-fixed{
     position: relative !important;
     background-position: center !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-}
-
-#cover-page{
-    background: url(../images/sydney.jpg);
-}
-
-#seul{
-    background: url(../images/seul.jpg);
-}
-
-#tokyo{
-    background: url(../images/tokyo.jpg);
-}
-
-#toronto{
-    background-image: url(../images/toronto.jpg);
-}
-
-#sydney{
-    background-image: url(../images/sydney.jpg);
 }
 
 #about-us{
