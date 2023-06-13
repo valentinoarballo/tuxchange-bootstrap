@@ -78,6 +78,9 @@ def inscriptions():
 
     return render_template('inscriptions.html', countries=json_data, imagenes=urls) #le paso como parametro la data del json
 
+@app.route('/about-us')
+def about_us():
+    return render_template('about_us.html')
 
 if __name__ == '__main__':
     app.run()
