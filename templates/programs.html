@@ -10,7 +10,7 @@
     <div class="row justify-content-between mx-0 px-xl-5 px-0">
 
         <div class="bg-primary text-white text-center align-self-center p-xl-5 my-3 col-xl-5 col-12">
-            <p class="display-2">Our programs!</p>
+            <p class="display-3">choose your program</p>
             <p class="text-justify h2 ">Welcome to TuXchange! We open doors to endless opportunities for students seeking immersive educational experiences. With our diverse range of destinations, from bustling cities to picturesque landscapes, students can embark on transformative journeys while fostering cultural understanding and personal growth. Join us and discover a world of possibilities, where education and travel go hand in hand</p>
         </div>
         <div class="col-xl-7 col-12 p-xl-2 p-0">
@@ -18,12 +18,12 @@
                 {% for country in countries %}
                     <div class="row bg-fixed rounded text-white bg-primary my-md-3 my-1 col-11 py-2 px-0" style="background-image: url('{{imagenes[country.id-1]}}');">
                         <div class="col-12 row p-0 m-0">
-                            <p class="col-12 h3 h-25 ">{{ country.program_name }}</p>
-                            <p class="col-8 h-75 pt-3 rounded ">{{ country.program_description }}</p>
-                            <div class="col-md-2 col-6">
+                            <p class="col-12 h3 m-0">{{ country.program_name }}</p>
+                            <p class="col-8 pt-3 rounded m-0">{{ country.program_description }}</p>
+                            <div class="col-md-2 col-6 p-0">
                                 <a href="" class="btn btn-info shadow-lg align-self-center py-1">{{country.name}}</a>
                             </div>
-                            <div class="col-md-2 col-6">
+                            <div class="col-md-2 col-6 p-0">
                                 <a href="/inscriptions" class="btn btn-success shadow-lg text-white h-3 align-self-center py-1">inscription</a> 
                             </div>
                         </div>
