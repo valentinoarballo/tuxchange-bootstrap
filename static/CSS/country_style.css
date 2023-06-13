@@ -1,0 +1,11 @@
+/* CSS FOR COUNTRY.HTML */
+/*      TUXCHANGE       */
+
+hr{
+    border: black solid 3px;
+}
+
+.opaque{
+    background-color: #0000004d;
+    background-blend-mode: darken;
+}
