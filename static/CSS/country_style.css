@@ -1,11 +1,13 @@
 /* CSS FOR COUNTRY.HTML */
 /*      TUXCHANGE       */
 
-hr{
-    border: black solid 3px;
+.divisor{
+    border: solid 1px;
 }
 
 .opaque{
-    background-color: #0000004d;
-    background-blend-mode: darken;
+    background-color: black;
+}
+.transparent{
+    opacity: 0.65;
 }
