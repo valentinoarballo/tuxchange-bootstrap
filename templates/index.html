@@ -62,7 +62,7 @@
                         <div class="container">
                             <p class="display-3">{{ country.name }}</p>
                             <p class="h3 my-3">{{ country.brief_description}}</p>
-                            <a href="#" class="btn btn-lg btn-primary rounded-pill">Read more</a>
+                            <a href="/country/{{country.id-1}}" class="btn btn-lg btn-primary rounded-pill">Read more</a>
                         </div>
                     </div>
                 {% elif country.id != 1 %}
@@ -71,7 +71,7 @@
                         <div class="container">
                             <p class="display-3">{{ country.name }}</p>
                             <p class="h3 my-3">{{ country.brief_description}}</p>
-                            <a href="#" class="btn btn-lg btn-primary rounded-pill">Read more</a>
+                            <a href="/country/{{country.id-1}}" class="btn btn-lg btn-primary rounded-pill">Read more</a>
                         </div>
                     </div>
                 {% endif %}
@@ -95,14 +95,10 @@
         <div class="col-xl-5 col-md-0 m-lg-4 m-md-3 m-sm-0 background-fixed" id="about-us"></div>  <!-- m-lg-4 m-md-3 m-sm-0 son los breakpoints -->
         <div class="col-xl-5 col-md-10 m-lg-4 m-md-3 h-75 text-white">
             <p class="display-1 mb-5">about us</p>
-            <p class="h4 mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit fugiat aliquam cum, dolorem
-                itaque sequi ad illo ratione officiis alias, corporis voluptatibus recusandae nisi iure, quia dolor
-                quidem. Assumenda fugit labore animi omnis earum. Deserunt laudantium non quae veniam eveniet accusamus
-                explicabo minus numquam vitae dolorem placeat fuga, necessitatibus provident neque amet incidunt. Quo
-                assumenda libero numquam vero, voluptate adipisci! Rem natus repellendus nobis vitae omnis perspiciatis
-                cum, blanditiis tenetur aliquam sapiente pariatur recusandae aut illum quo nesciunt eveniet aperiam
-                tempora sunt iure quis exercitationem assumenda vel.</p>
-            <a href="#" class="rounded-pill bg-light btn btn-lg float-right my-2">Read more</a>
+            <p class="h4 mb-2">At TuXchange, we believe that the world is better when people try to
+                understand one another. Since 2020, TuXchange has helped millions of people see new places,
+                experience new cultures, and learn new things about the world and about themselves.</p>
+            <a href="about-us" class="rounded-pill bg-light btn btn-lg float-right my-2">Read more</a>
         </div>
     </div>
 </div>
