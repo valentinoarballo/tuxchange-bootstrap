@@ -1,7 +1,7 @@
 
 # TuXchange
 
-web site of a student exchange company, presented as a project for the DevOps and programming II subjects of the rio cuarto technology institution - ITEC.
+A web site of a student exchange company, presented as a project for the DevOps and programming II subjects of the rio cuarto technology institution - ITEC.
 
 
 ## Acknowledgements
@@ -15,17 +15,17 @@ web site of a student exchange company, presented as a project for the DevOps an
  
 
 
-## Deployment
+## Set-Up
 
 To deploy this project you have to install Flask 2.3.2
 
-run this command on your terminal
+Run this command on your terminal
 
 ```bash
   flask run
 ```
 
-then go to [localhost:5000](http://localhost:5000/) in your browser
+Then go to [localhost:5000](http://localhost:5000/) in your browser
 
 
 ## Authors

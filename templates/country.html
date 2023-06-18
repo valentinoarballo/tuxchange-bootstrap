@@ -11,17 +11,19 @@
   <!-- begin Main Country -->
   <section class="container m-auto">
       <div class="row mt-5 mb-5">
-        <div class="col-5">
-
-          <h2 class="display-6">{{country_name}}</h2>
-          <p>{{country_description}} </p>
-          <a class="btn btn-primary btn-large" href="/inscriptions" role="button">Apply Now</a>
-          <a class="btn btn-primary btn-large" href="/programs" role="button">See programs</a>
-
+        
+        <div class="col-xl-7 col-12 my-auto">
+          <img class="w-100 rounded-lg shadow-lg" src="{{country_img}}" alt="{{country_name}}">
         </div>
-        <div class="col-7 my-auto">
-          <img class="w-100" src="{{country_img}}" alt="{{country_name}}">
 
+        <div class="col-xl-5 col-12">
+          <h2 class="display-6 text-center mt-2">{{country_name}}</h2>
+          <p class="text-justify">{{country_description}} </p>
+          <div class="d-flex justify-content-around mt-3 ">
+            <a class="btn btn-success btn-large" href="/inscriptions" role="button">Apply Now</a>
+            <p class="my-auto">or</p>
+            <a class="btn btn-primary btn-large" href="/programs" role="button">See programs</a>
+          </div>
         </div>
       </div>
   </section>
@@ -33,7 +35,7 @@
   <section>
       <div class="mt-5 mb-3 mx-5">
           <h1 class="text-center">Otros destinos populares</h1>
-          <hr>
+          <hr class="divisor">
       </div>
 
       <div id="carouselCountry" class="carousel slide" data-ride="carousel" >       
@@ -54,7 +56,7 @@
                             </div>
                         </div>
                     </div>                            
-                    <img class="d-block w-100" src="{{other_country_list[i].landscape_img}}" alt="{{other_country_list[i].name}}">
+                    <img class="d-block w-100 transparent" src="{{other_country_list[i].landscape_img}}" alt="{{other_country_list[i].name}}">
                 </div>
             {%endfor%}
           </div>
