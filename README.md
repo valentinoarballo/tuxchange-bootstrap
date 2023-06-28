@@ -17,15 +17,31 @@ A web site of a student exchange company, presented as a project for the DevOps 
 
 ## Set-Up
 
-To deploy this project you have to install Flask 2.3.2
+To deploy this project you will need an updated version of Python.
+First, we will create a virtual enviroment. You can do it with
+```bash
+  python3 -m venv venv
+```
+Now, we need to activate the virtual enviroment.
+On linux, just type
+```bash
+  source venv/bin/activate
+```
+on Windows,
+```bash
+   venv/Scripts/activate
+```
+Once activated, we need to install Flask and other libraries:
 
-Run this command on your terminal
-
+```bash
+  pip install -r requirements.txt
+```
+Lastly, we run the proyect with:
 ```bash
   flask run
 ```
 
-Then go to [localhost:5000](http://localhost:5000/) in your browser
+and access it through typing [localhost:5000](http://localhost:5000/) in your browser
 
 
 ## Authors
